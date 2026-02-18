@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aastha's Website</title>
+    <title>Aastha Portfolio</title>
 
     <style>
         body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+        }
 
-.card {
-    background-color: white;
-    padding: 30px;
-    width: 300px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
+        /* Navbar */
+        nav {
+            background-color: black;
+            padding: 15px;
+        }
 
-.card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
 
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="card">
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
-        <img src="profile.jpg" alt="Profile">
+    <!-- Header -->
+    <header id="home">
+        <h1>Aastha</h1>
+        <p>Beginner Full Stack Developer</p>
+    </header>
 
-        <h2>Aastha</h2>
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a B.Sc. Computer Science student learning Full Stack Web Development.</p>
+    </section>
 
-        <p>B.Sc. Computer Science Student</p>
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript (Learning), GitHub</p>
+    </section>
 
-        <p>Aspiring Full Stack Developer</p>
-
-        <a href="https://github.com" target="_blank" class="btn">
-            View My GitHub
-        </a>
-
-    </div>
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Portfolio Website</p>
+    </section>
 
 </body>
 </html>
